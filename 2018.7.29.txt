@@ -7,4 +7,4 @@
 	strSQL = "SELECT * FROM users WHERE (name = '1' OR '1') and (pw = '1' OR '1' = '1');"
 	实际sql将变为：
 	strSQL = "SELECT * FROM users;"
-	因此达到无账号和密码登录。
+	因此，达到无账号和密码登录。
