@@ -1,4 +1,4 @@
-最简单的sql注入：
+1.最简单的sql注入：
 	某个网站的登录验证的sql查询代码为：
 	strSQL = "SELECT * FROM users WHERE (name = '" + userName + "') and (pw = '" + password + "');"
 	恶意填入 userName = "1' OR '1' = '1'"
