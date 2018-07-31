@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#showPlace{
+			margin:  0 auto;/*水平居中*/
+    		position:  relative;
+    		width: 360px;
+    		height: 540px;
+    		border: 2px solid #d7d7d7;
+    		box-sizing:  border-box;/*设置元素宽和高计算方式，content-box 正常元素宽高，border-box为元素设置的宽度和高度决定了元素的边框盒，也就是说元素的padding和border都在已设定的宽和高中绘制，元素内容的宽和高将是减掉padding和border的值*/
+		}
+		#messagePlace{
+			position:  absolute;
+    		bottom:  0;
+    		left: 0;
+    		border-radius: 3px 3px 0 0;
+    		width:  100%;
+    		padding: 10px;
+    		text-align:  center;
+    		border:  1px solid skyblue;
+    		box-sizing:  border-box;
+		}
+		#inputPlace{
+			display: inline-block;
+    		padding: 5px;
+    		width:  80%;
+    		max-height:  120px;
+    		min-height:  40px;
+    		height:  auto;
+    		border: 1px solid #d5d5d5;
+    		border-radius: 3px;
+    		text-align:  left;
+    		overflow: auto;/*规定当内容溢出元素框时发生的事情,如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。*/
+    		color: black;
+    		font-weight:  normal;
+		}
+	</style>
+</head>
+<body>
+	<div id="showPlace" >
+		<div id="messagePlace">
+			<div id="inputPlace" contenteditable="true"></div><!-- contenteditable指定元素是否可编辑-->
+		</div>
+	</div>
+	<script type="text/javascript"></script>
+</body>
+</html>
